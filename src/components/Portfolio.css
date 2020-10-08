@@ -1,0 +1,16 @@
+i {
+	font-size: 1.5rem;
+}
+
+.edit {
+	color: #5bc0de;
+	margin-right: 1rem;
+}
+
+.delete {
+	color: #d9534f;
+}
+
+.card-body img {
+	height: 150px !important;
+}

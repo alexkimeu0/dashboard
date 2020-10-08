@@ -1,0 +1,46 @@
+.top {
+	margin-bottom: 1rem;
+	color: #ffffff;
+	display: flex;
+	justify-content: space-between;
+}
+
+.top-title {
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+}
+
+.top a {
+	color: #ffffff;
+}
+
+.resumes {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 1rem;
+}
+
+.resumes .card {
+	background-color: #ffffff;
+	padding: 0.5rem;
+	border-radius: 0.5rem;
+}
+
+.resumes .card:not(:last-child) {
+	margin-right: 1rem;
+}
+
+.resumes .card-header > h2 {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.resumes .card-header h2 > span {
+	font-size: small;
+}
+
+.resumes .card-footer {
+	margin: 0.3rem 0;
+}
