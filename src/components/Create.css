@@ -1,0 +1,25 @@
+form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+form > input,
+form > textarea {
+	margin: 0.5rem 0;
+	padding: 0.5rem;
+	border-radius: 0.3rem;
+	border: none;
+	outline-width: 0;
+}
+
+form > button {
+	padding: 0.5rem;
+	display: block;
+	background-color: #5bc0de;
+	border: none;
+	outline-width: 0;
+	border-radius: 0.3rem;
+	cursor: pointer;
+	font-weight: bold;
+}

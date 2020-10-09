@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import axios from "./axios";
 
 import Project from "./Project";
@@ -21,9 +22,9 @@ const Portfolio = () => {
 					<h2 class="top-title">
 						Projects&nbsp;<i className="fas fa-arrow-right"></i>
 					</h2>
-					<a href="">
+					<Link to="/newproject">
 						<i className="fas fa-plus"></i>
-					</a>
+					</Link>
 				</div>
 				<div className="items">
 					{projects.map((project) => (

@@ -1,6 +1,7 @@
 import React from "react";
 import axios from "./axios";
 
+
 const deletePost = (id) => {
 	alert("Sure You Wanna Do This??");
 	axios.delete(`/blog/${id}`);

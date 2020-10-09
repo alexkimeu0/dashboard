@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import Item from "./Item";
 import axios from "./axios";
 
@@ -18,9 +19,9 @@ const Resume = () => {
 				<h2 class="top-title">
 					Resume Items&nbsp;<i className="fas fa-arrow-right"></i>
 				</h2>
-				<a href="">
+				<Link to="/newresume">
 					<i className="fas fa-plus"></i>
-				</a>
+				</Link>
 			</div>
 			<div className="resumes">
 				{items.map((item) => (

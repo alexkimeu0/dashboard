@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from "react";
 import Post from "./Post";
 import axios from "./axios";
+import CreatePost from "./CreatePost";
+
+import { Link } from "react-router-dom";
 
 import "./Blog.css";
 
@@ -13,15 +16,17 @@ const Blog = () => {
 		});
 	}, [posts]);
 
+	// const createPost = () => <CreatePost />;
+
 	return (
 		<div className="container">
 			<div className="top">
 				<h2 class="top-title">
 					Blog Posts&nbsp;<i className="fas fa-arrow-right"></i>
 				</h2>
-				<a href="">
+				<Link to="/newpost">
 					<i className="fas fa-plus"></i>
-				</a>
+				</Link>
 			</div>
 			<div className="resumes">
 				{posts.map((post) => (

@@ -17,7 +17,8 @@ const Item = ({ item }) => {
 			</div>
 
 			<div className="body">
-				<p>{item.description}</p>
+				<h5>{item.company}</h5>
+				<p className="description">{item.description}</p>
 			</div>
 
 			<div className="card-footer">
